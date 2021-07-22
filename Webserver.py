@@ -96,7 +96,7 @@ class requestHandler(BaseHTTPRequestHandler):
             self.wfile.write(output.encode())    
 
 
-    #POST operations
+    
     def do_POST(self):
         if self.path.endswith('/new'):
             ctype, pdict = cgi.parse_header(self.headers['content-type'])
